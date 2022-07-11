@@ -27,7 +27,7 @@ public class StudentController {
     public String viewHomePage(Model model) {
         List<Student> liststudent = service.ListAll();
         model.addAttribute("liststudent", liststudent);
-        System.out.print("Get / ");
+        System.out.print("Get all record");
         return "index";
     }
  
